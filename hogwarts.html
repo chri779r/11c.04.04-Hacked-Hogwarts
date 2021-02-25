@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11c.04.04 Hacked Hogwarts</title>
+    <link rel="stylesheet" href="hogwarts.css" />
+  </head>
+  <body>
+    <header id="topbar">
+      <h1>Hogwarts</h1>
+      <h2>School of Witchcraft and Wizardry</h2>
+    </header>
+    <img id="logo" src="/images/02hogwarts.png" alt="Hogwarts Logo" />
+
+    <!-- Filter by crest -->
+    <div class="filter_buttons">
+      <button class="filter clicked" data-action="filter" data-filter="all"><img src="/images/hogwarts.png" alt="" /></button>
+      <button class="filter" data-action="filter" data-filter="Gryffindor"><img src="/images/01gryffindor.png" alt="" /></button>
+      <button class="filter" data-action="filter" data-filter="Hufflepuff"><img src="/images/01hufflepuff.png" alt="" /></button>
+      <button class="filter" data-action="filter" data-filter="Ravenclaw"><img src="/images/01ravenclaw.png" alt="" /></button>
+      <button class="filter" data-action="filter" data-filter="Slytherin"><img src="/images/01slytherin.png" alt="" /></button>
+    </div>
+
+    <!-- Filter by extra curriculum -->
+    <div class="filter_buttons_extra">
+      <button class="filter" data-action="filter" data-filter="inquisitorial-squad">Inquisitorial Squad</button>
+      <button class="filter" data-action="filter" data-filter="unexpelled">Not expelled</button>
+      <button class="filter" data-action="filter" data-filter="expelled">Expelled</button>
+    </div>
+
+    <!-- Sort by feature -->
+    <select name="sortingList" id="sortingList">
+      <option>Sort by</option>
+      <option value="firstnamea-z">Firstname A-Z</option>
+      <option value="firstnamez-a">Firstname Z-A</option>
+      <option value="lastnamea-z">Lastname A-Z</option>
+      <option value="lastnamez-a">Lastname Z-A</option>
+      <option value="housea-z">House A-Z</option>
+      <option value="housez-a">House Z-A</option>
+    </select>
+
+    <!-- Student template -->
+    <section id="student_section">
+      <h2 class="section_header">All Students</h2>
+      <section class="container"></section>
+
+      <template>
+        <article id="student_article">
+          <img src="" alt="" />
+          <h2 class="fullname"></h2>
+        </article>
+      </template>
+    </section>
+
+    <footer></footer>
+    <script src="hogwarts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@font-face {
+  font-family: "Harry Potter";
+  src: url("/fonts/HarryPotter.woff2") format("woff2"), url("/fonts/HarryPotter.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2 {
+  font-family: "Harry Potter";
+}
+
+/*-----------------HEADER-------------------*/
+#topbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #740001;
+  padding: 1rem;
+  height: 180px;
+  color: #ececec;
+  font-size: 1.7rem;
+}
+
+#logo {
+  justify-content: left;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*-----------------FILTER BUTTONS-------------------*/
+.filter_buttons,
+.filter_buttons_extra {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.filter_buttons > button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.filter_buttons_extra > button {
+  cursor: pointer;
+  height: 40px;
+  width: 160px;
+  font-size: 16px;
+}
+
+#sortingList {
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+/*-----------------STUDENTLIST-------------------*/
+
+#student_section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
